@@ -1,0 +1,127 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="productscard.css">
+<link rel="stylesheet" href="slideshow.css">
+<link rel="stylesheet" href="login.css">
+<style>
+body { background:#3399ff ; }
+<!--//old color #9cb8b3-->
+</style>
+
+<body>
+<ul>
+<li><a href="index1.html">HOME</a></li>
+<li><a href="courses.html">COURSE</a></li>
+<li><a href="#papers">PAPERS</a><li>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#contact">CONTACT</a></li>
+</ul>
+<div id-"head">
+  <h1 style="margin-left:450px;">Welcome to EDUcational</h1>
+  </div>
+  <form class="left">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+    <img src="img4.png" style="width:100%">
+  <div class="text">Know It</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="img5.png" style="width:100%">
+  <div class="text">Rise and Shine</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="img6.png" style="width:100%">
+	<div class="text">Learn to code for free</div>
+</div>
+</div>
+  </form>
+<form class="right" action="login1.php">
+<h1 align="center" >Login</h1>
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>	
+
+  <div class="container" align="right">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit" name="three" onclick="check(uname.value, psw.value)">Login</button>
+    <input type="checkbox" checked="checked" /> Remember me
+    
+  </div>
+
+<!--   <div class="container" style="background-color:#f1f1f1"> -->
+<!--     <button class="signupbtn" onclick="document.getElementById('id01').style.display='block'">Sign Up</button> -->
+<!--     <b></b> -->
+<!--     Button to open the modal -->
+<!--     <span class="psw"> Forgot <a href="#">password?</a></span> -->
+<!--   </div> -->
+  
+</form>
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content animate" method="post">
+    <div class="container">
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <input type="checkbox" checked="checked"> Remember me
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+      <div class="clearfix" >
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button name="signup" type="submit" class="signupbtn" >Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+
+</html>
