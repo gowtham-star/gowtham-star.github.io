@@ -17,7 +17,7 @@ text-shadow:-1px 0px 1px rgba(255,87,244,0.8);font-weight:normal;color:#E82D10;b
       transition: 0.5s;
       width: 200px;
 	  height:100px
-      border-radius: 5px;
+         border-radius:5px;
 	  background:#ffffff;
 	  margin-left:37px;
 	  margin-right:30px;
@@ -81,7 +81,7 @@ html,body {
 }
 
 .slider-wrapper {
-	width: 70%;
+	width: 80%;
 	height: 400px;
 	position: relative;
 }
