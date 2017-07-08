@@ -47,8 +47,7 @@ text-shadow:-1px 0px 1px rgba(255,87,244,0.8);font-weight:normal;color:#E82D10;b
   .products{
 	  display:flex;
 	  flex-wrap: wrap;
-	  
-  }
+	   }
 p.sansserif {
     ​font-family: Arial, Helvetica, sans-serif;
 	text-align:center;
@@ -82,7 +81,7 @@ html,body {
 }
 
 .slider-wrapper {
-	width: 800px;
+	width: 70%;
 	height: 400px;
 	position: relative;
 }
