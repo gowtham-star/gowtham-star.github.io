@@ -1,3 +1,14 @@
+ @media (max-width: 768px) {
+.img-responsive {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+}
+
+
+
+
 .heade {
 	  width:1000px;
 	  height:100px;
@@ -90,7 +101,7 @@ html,body {
 .slide {
 	float: left;
 	position: absolute;
-	width: 100%;
+	width: 1000px;
 	height: 100%;
 	opacity: 0;
 	transition: opacity 3s linear;
