@@ -1,0 +1,75 @@
+body{
+	background-color: #FFCC00;
+	color: #000000;
+	font-family: Georgia;
+}
+
+.PageTitle h1{
+	color: #A4A400;
+	width: 95%;
+	height: 40px;
+	background-color: #F0F0F0;
+	text-align: center;
+}
+
+.PageTitle h2{
+	color: #A4A400;
+	width: 95%;
+	height: 30px;
+	background-color:#F0F0F0;
+	text-align: center;
+}
+
+.nav{
+	margin-left: 3%;
+}
+.nav a{
+	color: #3366ff;
+	background-color:#80ff80;
+	padding: 5px;
+	text-decoration: none;
+}
+
+table{
+	background-color: #CC9933;
+	margin-top: 20px;
+	color: #FFFFFF;
+}
+
+table th{
+	background-color: #003366;
+	color: #FFFFFF;
+	border: 2px solid white;
+	padding: 5px;
+}
+
+table td{
+	border: 2px solid white;
+	padding: 5px;
+}
+
+.extraWid{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.cen{
+	text-align: center;
+	background-color: #F0F0F0;
+	color: #A4A400;
+	font-family: 'Century Gothic';
+	font-weight: bold;
+}
+
+span{
+	font-weight: bold;
+}
+
+/* Image float: Use CSS to make one or both images float with the corresponding text displayed directly to the right or left of the image -*/
+img{
+	 float: right;
+}
+/* Widen headings letter spacing: Use CSS to noticeably widen the letter spacing on all headings on the page.*/
+h1,h2{
+	letter-spacing: 5px;
+}
