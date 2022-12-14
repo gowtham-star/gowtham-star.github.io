@@ -1,0 +1,60 @@
+<!--Features Added
+  1.End of game notification
+  2.Animations and transitions
+  3.Game time with background music
+  4.Multiple Background
+  5.Different Puzzle Size Option
+  6.Reset Button to start puzzle again
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>15 Puzzle</title>
+    <link rel="stylesheet" href="15puzzle.css">
+    <script src="15puzzle.js" defer></script>
+    <script src="sample.js" defer></script>
+  </head>
+  <body>
+    <div class="bg">
+    <div class="side-option">
+      <div id="title" class="title">
+        <h1>15 Puzzle Game</h1>
+      </div>
+      <p class="time-remain-text">Time remaining </p>
+      <div id="timer_div"></div>
+      <div id="remaintime_div" class="remain-time-text">Not Started</div>
+      <div id="slider">
+        <form>
+          <div class="difficulty-selection" style="float: left; left: 30%; margin-left: 7%;">
+            <p>Choose Level</p> 
+            <label style="font-family: 'Raleway-Light'; color: rgb(255, 126, 171); font-weight: 600; font-size: 25px;">Easy</label><input type="range" id="scale" value="4" min="3" max="6" step="1" />
+            <label style="font-family: 'Raleway-Light'; color: rgb(255, 126, 171); font-weight: 600; font-size: 25px;">Hard</label><br>
+          </div>
+          <div class="difficulty-selection" style="float: right; margin-right: 12%;">
+            <p>Select Picture</p>
+            <select id="dropdown" class="option-selection">
+              <option value="#">Choose to Start</option>
+              <option value="parrot.png">Parrot</option>
+              <option value="hamburger.jpg">Hamburger</option>
+              <option value="noddy.jpg">Noddy</option>
+              <option value="sheep.png">Sheep</option>
+            </select>
+          </div>
+          <div class="reset-button-holder" >
+            <br><br>
+            
+            <button class="reset-button" onclick="resetBoard(event)">Reset</button>
+            <br><br>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+    <div class="right">
+      <div id="main">
+        <canvas id="puzzle" class="image-disp" width="480px" height="480px"></canvas>
+      </div>
+    </div> 
+    </div> 
+  </body>
+</html>
